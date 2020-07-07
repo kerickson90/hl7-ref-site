@@ -1,0 +1,197 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&display=swap" 
+    rel="stylesheet">   
+     <link rel="stylesheet" href="assets/main.css" />
+    <title>Hl7 Reference Site</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>HL7 Reference Site</h1>
+                    <h2>Message Segments</h2>
+                </div>
+            </div> 
+        </div>
+    </header>
+
+
+ 
+      <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="hl7RefNav">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+ 
+         <div class="collapse navbar-collapse" id="#hl7RefNav">
+         <ul class="navbar-nav">
+             <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+             <li class="nav-item"><a class="nav-link" href="messageTypes.html"><i class="fa fa-envelope-o fa-lg"></i> Message Types</a></li>
+             <li class="nav-item "><a class="nav-link" href="triggerEvents.html"><i class="fa fa-bolt fa-lg"></i> Trigger Events</a></li>
+             <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-th-list fa-lg"></i> Segments</a></li>
+         </ul>
+     </div>
+ </div>
+     </nav>
+     <div class="col m-0>
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Message Segments</li>
+
+      </ol>
+    </div>
+ 
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+               <h2>HL7 Message Segments</h2>
+            </div>
+        </div>
+    </div>
+    
+<div class="container">
+    <div class="row">
+        <div class="col">
+          These message segments were taken from the <a href="http://www.hl7.org/special/committees/vocab/v26_appendix_a.pdf">HL7 v2.6 Standard</a>
+
+          <table class="table" id="triggerEvent">
+
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Segment</th>
+                <th scope="col">Description</th>
+                <th scope="col">Chapters         
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <div>
+                <input class="form-control" type="text" id="tableInput" onkeyup="searchTable()" 
+                placeholder="Search for trigger events..">
+                </div>
+              <tr>
+                <td>ABS</td>
+                <td>Abstract </td>
+                <td>6.5.12</td>
+              </tr>
+              <tr>
+                <td>ACC</td>
+                <td>Accident </td>
+                <td>6.5.9 
+                  </td>
+              </tr>
+              <tr>
+                <td>ADD</td>
+                <td>Addendum</td>
+                <td>2.14.1 </td>
+              </tr>
+              <tr>
+                <td>ADJ</td>
+                <td>Adjustment </td>
+                <td>16.4.7</td>
+              </tr>
+              <tr>
+                <td>AFF</td>
+                <td>Professional Affiliation</td>
+                <td>15.4.1</td>
+              </tr>
+              <tr>
+                <td>AIG</td>
+                <td>Appointment Information - General Resource
+                  </td>
+                <td>10.6.5</td>
+              </tr>
+              <tr>
+                <td>AIL</td>
+                <td>Appointment Information - Location Resource </td>
+                <td>10.6.6</td>
+              </tr>
+              <tr>
+                <td>AIP</td>
+                <td>Appointment Information - Personnel Resource </td>
+                <td>10.6.7</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-sm-2 offset-1 text-white">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="messageTypes.html">Message Types</a></li>
+                    <li><a href="triggerEvents.html">Trigger Events</a></li>
+                    <li><a href="#">Message Segments</a></li>
+                </ul>
+            </div>
+    <div class="col-6 col-sm-5 text-center text-white">
+        <h5>Social</h5>
+        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i>
+        </a>
+        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i>
+        </a>
+        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg" ></i>
+        </a>
+        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube-square fa-lg"></i>
+        </a>
+    </div>
+    <div class="col-sm-4 text-center text-white">
+        <h5>Contact</h5>
+        <a  role="button" class="btn btn-link" href="https://github.com/kerickson90"><i class="fa fa-github fa-lg" ></i></a>
+       <br />
+     <a role="button" class="btn btn-link" href="mailto:kerickson90@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a>           <br />
+
+      <a role="button" class="btn btn-link" href="https://www.linkedin.com/in/katherine-erickson-b3b10a33"><i class="fa fa-linkedin fa-lg"></i></a> 
+
+    </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+
+      function searchTable() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("tableInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("triggerEvent");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+      </script>
+      
+
+
+</body>
+</html>
